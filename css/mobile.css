@@ -1,0 +1,71 @@
+
+
+#what .items {
+    flex-direction: column;
+}
+
+#what .items .item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+#what .items .item i {
+    margin-right: 0.75rem;
+    margin-bottom: 0;
+}
+
+/* Smartphones */
+@media (max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #navbar ul {
+        justify-content: center;
+        margin: 0.5rem 0 0 0;
+        padding: 0.5rem;
+    }
+
+    #showcase .showcase-content {
+        top: 110px;
+    } 
+    #who  {
+        display: block;
+    }
+
+    #who .who-img {
+        display: none;
+    }
+    #clients .items img {
+        width: 80%;
+    }
+
+    #clients .items div:last-child {
+        display: none;
+    }
+
+    #contact {
+        display: block;
+    }
+
+    #contact .map {
+        height: 300px;
+        border-top: 4px solid #333;
+    }
+}
+
+@media (max-height: 568px) {
+
+    #showcase .showcase-content {   
+        top: 160px;
+        margin-top: -3rem;
+    }
+    .l-heading {
+        font-size: 3rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+}
